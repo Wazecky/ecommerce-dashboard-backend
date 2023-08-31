@@ -78,7 +78,7 @@ class ProductController extends Controller
             // Save the updated product
             $product->update();
 
-            return response()->json(['message' => 'Product updated successfully'], 200);
+            return response()->json(['message' => 'The product is updated successfully'], 200);
         } catch (\Exception $e) {
             // Handle any exceptions that occur
             return response()->json(['message' => 'Error updating product: ' . $e->getMessage()], 500);
